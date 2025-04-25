@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AbilityMoveData
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  rotateSpeed: 500
+  rotateSpeed: 100
