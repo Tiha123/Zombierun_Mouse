@@ -5,10 +5,12 @@ public class PlayerControl : MonoBehaviour
 {
     [SerializeField] List<AbilityData> datas;
     [SerializeField] List<Ability> abilities;
+    [SerializeField] List<Gun> guns;
     public Animator animator;
     public Rigidbody rb;
     public InputControl input;
     public Camera cam;
+    public Gun currentGun;
 
     void Awake()
     {
@@ -34,6 +36,7 @@ public class PlayerControl : MonoBehaviour
         {
             ab.Activate();
         }
+        currentGun=guns[0];
     }
 
     void Start()
