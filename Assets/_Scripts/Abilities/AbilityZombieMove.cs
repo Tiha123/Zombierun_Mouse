@@ -17,10 +17,10 @@ public class AbilityFire : Ability<AbilityFireData>
             Physics.Raycast(ray, out RaycastHit hit, data.currentGun.maxRange);
             if(hit.collider.tag=="Enemy")
             {
-                
+
             }
             --data.ammoRemain;
-
+            
         }
     }
 
